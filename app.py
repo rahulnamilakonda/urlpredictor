@@ -19,7 +19,7 @@ def start():
 @app.route('/predict', methods=['POST'])
 def predict():
     url = request.form.get('url')
-    res = model.predict([url])
+    res = model.predict([url])[0]
     return jsonify({'result':str(res)})
 
 
