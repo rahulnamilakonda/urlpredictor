@@ -1,0 +1,6 @@
+pickle
+pandas
+nltk
+sklearn
+flask
+gunicorn
